@@ -23,7 +23,7 @@ async def start(msg: Message):
 
         user = await crud.create_user(new_user)
 
-    await msg.answer(f"Привет, {user.name}\n\n(@{user.username}:{user.user_id})")
+    await msg.answer(f"Привет, {user.name} (@{user.username}:{user.user_id})\n\nИскать собеседника - /search")
 
 
 @router.message(Command("search"))

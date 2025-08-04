@@ -10,7 +10,7 @@ async def find_inters():
     await asyncio.sleep(5)
 
     while True:
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.01)
 
         users = await crud.get_searching_users()
 
